@@ -9,18 +9,25 @@
 /* Begin PBXBuildFile section */
 		874CF3682A895A6800712016 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 874CF3672A895A6800712016 /* RealityKitContent */; };
 		874CF36A2A895A6800712016 /* ValoVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CF3692A895A6800712016 /* ValoVisionApp.swift */; };
-		874CF36C2A895A6800712016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CF36B2A895A6800712016 /* ContentView.swift */; };
+		874CF36C2A895A6800712016 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CF36B2A895A6800712016 /* MainView.swift */; };
 		874CF36E2A895A6C00712016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874CF36D2A895A6C00712016 /* Assets.xcassets */; };
 		874CF3712A895A6C00712016 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874CF3702A895A6C00712016 /* Preview Assets.xcassets */; };
+		87B786AE2A8E568B00A7BAE6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B786AD2A8E568B00A7BAE6 /* ViewModel.swift */; };
+		87B786B22A8E5BF300A7BAE6 /* AgentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B786B12A8E5BF300A7BAE6 /* AgentsModel.swift */; };
+		87B786B52A8E5F2000A7BAE6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 87B786B42A8E5F2000A7BAE6 /* Alamofire */; };
+		87B786B72A8E6FBA00A7BAE6 /* DataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B786B62A8E6FBA00A7BAE6 /* DataSources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		874CF3622A895A6800712016 /* ValoVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValoVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		874CF3662A895A6800712016 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		874CF3692A895A6800712016 /* ValoVisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValoVisionApp.swift; sourceTree = "<group>"; };
-		874CF36B2A895A6800712016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		874CF36B2A895A6800712016 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		874CF36D2A895A6C00712016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		874CF3702A895A6C00712016 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		87B786AD2A8E568B00A7BAE6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		87B786B12A8E5BF300A7BAE6 /* AgentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsModel.swift; sourceTree = "<group>"; };
+		87B786B62A8E6FBA00A7BAE6 /* DataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				874CF3682A895A6800712016 /* RealityKitContent in Frameworks */,
+				87B786B52A8E5F2000A7BAE6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,8 +63,11 @@
 		874CF3642A895A6800712016 /* ValoVision */ = {
 			isa = PBXGroup;
 			children = (
+				87B786B12A8E5BF300A7BAE6 /* AgentsModel.swift */,
+				87B786B62A8E6FBA00A7BAE6 /* DataSources.swift */,
+				874CF36B2A895A6800712016 /* MainView.swift */,
 				874CF3692A895A6800712016 /* ValoVisionApp.swift */,
-				874CF36B2A895A6800712016 /* ContentView.swift */,
+				87B786AD2A8E568B00A7BAE6 /* ViewModel.swift */,
 				874CF36D2A895A6C00712016 /* Assets.xcassets */,
 				874CF36F2A895A6C00712016 /* Preview Content */,
 			);
@@ -97,6 +108,7 @@
 			name = ValoVision;
 			packageProductDependencies = (
 				874CF3672A895A6800712016 /* RealityKitContent */,
+				87B786B42A8E5F2000A7BAE6 /* Alamofire */,
 			);
 			productName = ValoVision;
 			productReference = 874CF3622A895A6800712016 /* ValoVision.app */;
@@ -126,6 +138,9 @@
 				Base,
 			);
 			mainGroup = 874CF3592A895A6800712016;
+			packageReferences = (
+				87B786B32A8E5F2000A7BAE6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 874CF3632A895A6800712016 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -152,7 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				874CF36C2A895A6800712016 /* ContentView.swift in Sources */,
+				874CF36C2A895A6800712016 /* MainView.swift in Sources */,
+				87B786AE2A8E568B00A7BAE6 /* ViewModel.swift in Sources */,
+				87B786B22A8E5BF300A7BAE6 /* AgentsModel.swift in Sources */,
+				87B786B72A8E6FBA00A7BAE6 /* DataSources.swift in Sources */,
 				874CF36A2A895A6800712016 /* ValoVisionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,10 +372,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		87B786B32A8E5F2000A7BAE6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		874CF3672A895A6800712016 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
+		};
+		87B786B42A8E5F2000A7BAE6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87B786B32A8E5F2000A7BAE6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
